@@ -1,0 +1,75 @@
+.image-introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 17vh auto; }
+  .image-introduction h2 {
+    font-size: 50px;
+    -webkit-text-stroke: 1px #0bec0b;
+    color: transparent;
+    position: relative;
+    display: flex; }
+    .image-introduction h2::before {
+      content: attr(text);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      color: blue;
+      -webkit-text-stroke: 2px blue;
+      border-right: 2px solid #066ff8;
+      animation: animate 20s linear infinite; }
+  .image-introduction img {
+    height: 50vh; }
+
+@keyframes animate {
+  0%,20%,100% {
+    width: 0; }
+  60% {
+    width: 50%; }
+  50% {
+    width: 80%; }
+  70%,90% {
+    width: 100%; } }
+.texte {
+  font-size: 20px; }
+
+.intro-collab {
+  height: 60vh;
+  width: 80vw;
+  margin: 20vh auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+  position: relative; }
+  .intro-collab p {
+    font-size: 12px; }
+  .intro-collab h1 {
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #0066ff; }
+  .intro-collab img {
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+    border: 2px solid blue; }
+  .intro-collab span {
+    margin-left: 30px; }
+
+.video-tutoriel {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20vh; }
+  .video-tutoriel video {
+    margin: 10vh 0;
+    width: 400px;
+    height: 200px; }
+
+/*# sourceMappingURL=tutoriel.css.map */

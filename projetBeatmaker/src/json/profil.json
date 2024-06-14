@@ -1,0 +1,79 @@
+[
+    {
+        "nom":"Kygo",
+        "style":"tropical House",
+        "photo_profil":"../../artiste/kygo/images/Kygo Blue Logo Art Print by kevinkim428.jpeg",
+        "titre_chanson":"",
+        "status_projet":"libre"
+    },
+    {
+        "nom":"Afrojack",
+        "style":"EDM",
+        "photo_profil":"../../artiste/afro_jack/images/téléchargement (2).jpeg",
+        "titre_chanson":"",
+        "status_projet":"libre"
+    },
+    {
+        "nom":"Alan Walker",
+        "style":"EDM & futur bass",
+        "photo_profil":"../../artiste/alan_walker/images/'alan walker' Poster, picture, metal print, paint by Lowpoly Posters _ Displate.jpeg",
+        "titre_chanson":"",
+        "status_projet":"libre"
+    },
+    {
+        "nom":"Avicii",
+        "style":"EDM",
+        "photo_profil":"../../artiste/avicii/images/bbbe3950-6bfd-41dc-8f26-bb0ef051b77f.jpeg",
+        "titre_chanson":"",
+        "status_projet":"libre"
+    },
+    {
+        "nom":"The Chainsmokers",
+        "style":"futur bass",
+        "photo_profil":"../../artiste/chainsmokers/images/4f3777d2-cf05-4b6b-9744-f3eff66e5b0b.jpeg",
+        "titre_chanson":"",
+        "status_projet":"libre"
+    },
+    {
+        "nom":"David Guetta",
+        "style":"EDM, futur bass",
+        "photo_profil":"../../artiste/david_guetta/images/be71cef2-dfcc-47df-91d9-033fa1d760aa.jpeg",
+        "titre_chanson":"",
+        "status_projet":"libre"
+    },
+    {
+        "nom":"Gryffin",
+        "style":"EDM",
+        "photo_profil":"../../artiste/kygo/images/1b735c62-683a-4397-9a68-e9dd0b2e47c2.jpeg",
+        "titre_chanson":"",
+        "status_projet":"libre"
+    },
+    {
+        "nom":"Hardwell",
+        "style":"EDM",
+        "photo_profil":"../../artiste/hardwell/images/téléchargement.jpeg",
+        "titre_chanson":"",
+        "status_projet":"libre"
+    },
+    {
+        "nom":"Illenium",
+        "style":"futur bass",
+        "photo_profil":"../../artiste/illenium/images/ILLENIUM Releases ‘Fallen Embers’ His Highly Anticipated Fourth Album.jpeg",
+        "titre_chanson":"",
+        "status_projet":"libre"
+    },
+    {
+        "nom":"Marshmello",
+        "style":"trap, futur bass, EDM",
+        "photo_profil":"../../artiste/marshmello/images/Dab Black And White - Imagem Dj Marshmallow Png ,  Free Transparent Clipart - ClipartKey.jpeg",
+        "titre_chanson":"",
+        "status_projet":"libre"
+    },
+    {
+        "nom":"Martin Garrix",
+        "style":"futur bass, EDM",
+        "photo_profil":"../../artiste/martin_garrix/images/061b3345-84fe-4421-95ba-843497ec8ab0.jpeg",
+        "titre_chanson":"",
+        "status_projet":"libre"
+    }
+]

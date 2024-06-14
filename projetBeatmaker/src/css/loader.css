@@ -1,0 +1,55 @@
+.body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center; }
+
+.loader {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  left: 20px;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden; }
+  .loader img {
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    height: 190px;
+    width: 190px;
+    z-index: 2; }
+  .loader::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(blue, red);
+    animation: animate linear infinite 2s;
+    transform-origin: bottom right;
+    z-index: -10;
+    animation: rotate linear infinite 2s; }
+  .loader::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(blue, red);
+    animation: animate linear infinite 2s;
+    transform-origin: top left;
+    z-index: -10;
+    animation: rotate linear infinite 2s; }
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg); } }
+
+/*# sourceMappingURL=loader.css.map */

@@ -1,0 +1,205 @@
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.intro {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  overflow-y: hidden;
+  position: relative; }
+  .intro img {
+    height: 800px;
+    width: 400px; }
+  .intro h1 {
+    color: red; }
+    .intro h1 span {
+      color: #0066ff; }
+  .intro .span-animation {
+    background-color: white;
+    position: absolute;
+    top: 60%;
+    transform: scale(0.8); }
+
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+  transform: translateX(0%);
+  margin: 0 0; }
+  .title::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    transform-origin: 0 0;
+    height: .5vh;
+    top: 150%;
+    left: 0;
+    background: linear-gradient(200deg, blue, red);
+    transform: scaleX(0.05);
+    animation: animate-title linear forwards .6s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+@keyframes animate-title {
+  100% {
+    transform: scaleX(0.5); } }
+.list-profil {
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; }
+  .list-profil .beatmaker {
+    border: 2px white;
+    border-style: outset;
+    margin: 10vh 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden; }
+    .list-profil .beatmaker button {
+      bottom: 20px;
+      color: red;
+      position: absolute;
+      font-size: 20px;
+      border: 2px solid #51fd02;
+      border-radius: 10px;
+      padding: 10px 40px;
+      cursor: pointer;
+      z-index: 1;
+      transition: 0.2s cubic-bezier(0, 0.2, 0.8, 0.75); }
+      .list-profil .beatmaker button::before {
+        content: '';
+        position: absolute;
+        width: 105%;
+        height: 110%;
+        background: linear-gradient(blue, red);
+        top: -5%;
+        left: -2.5%;
+        border-radius: 10px;
+        z-index: -2; }
+      .list-profil .beatmaker button::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        z-index: -1; }
+    .list-profil .beatmaker .b2 {
+      transition: 0.3s cubic-bezier(0, 0.2, 0.8, 0.75); }
+    .list-profil .beatmaker:hover img {
+      transform: scale(1.2);
+      filter: grayscale(1); }
+    .list-profil .beatmaker:hover h2 {
+      opacity: 1; }
+    .list-profil .beatmaker:hover .b2 {
+      bottom: 40%; }
+      .list-profil .beatmaker:hover .b2:hover {
+        box-shadow: 0 0 10px rgba(0, 68, 255, 0.849), 0 0 20px #0066ff, 0 0 40px #0066ff;
+        letter-spacing: 2px; }
+        .list-profil .beatmaker:hover .b2:hover::before, .list-profil .beatmaker:hover .b2:hover::after {
+          filter: blur(1px);
+          animation: rotate 2s linear infinite; }
+      .list-profil .beatmaker:hover .b2:active::after {
+        background-color: white; }
+    .list-profil .beatmaker:hover button {
+      bottom: 20%; }
+      .list-profil .beatmaker:hover button:hover {
+        box-shadow: 0 0 10px rgba(0, 68, 255, 0.849), 0 0 20px #0066ff, 0 0 40px #0066ff;
+        letter-spacing: 2px; }
+        .list-profil .beatmaker:hover button:hover::before, .list-profil .beatmaker:hover button:hover::after {
+          filter: blur(1px);
+          animation: rotate 2s linear infinite; }
+      .list-profil .beatmaker:hover button:active::after {
+        background-color: white; }
+    .list-profil .beatmaker img {
+      height: 300px;
+      width: 250px;
+      transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+    .list-profil .beatmaker h2 {
+      bottom: 20px;
+      color: red;
+      opacity: 0;
+      position: absolute;
+      font-size: 20px;
+      transition: .6s;
+      -webkit-text-stroke: 2px red;
+      color: transparent; }
+      .list-profil .beatmaker h2::selection {
+        color: transparent; }
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0); }
+  100% {
+    filter: hue-rotate(360deg); } }
+.cep {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px; }
+
+.popup-video {
+  position: fixed;
+  display: none;
+  background-color: black;
+  height: 70vh;
+  width: 60vw;
+  z-index: 20;
+  top: 19%;
+  left: 20%;
+  margin: 0 auto;
+  flex-direction: column;
+  border: 5px inset #ff6600;
+  overflow-y: scroll; }
+  .popup-video::-webkit-scrollbar {
+    width: 15px;
+    background-color: white;
+    padding: 0 10px; }
+  .popup-video::-webkit-scrollbar-thumb {
+    height: 40px;
+    background: linear-gradient(#006eff, #e40f0f);
+    border-radius: 10px; }
+  .popup-video .video_du_popup {
+    display: grid;
+    z-index: 40;
+    grid-template-columns: 1fr 1fr; }
+    .popup-video .video_du_popup video {
+      margin: 50px auto;
+      height: 150px;
+      width: 300px; }
+  .popup-video div:nth-child(1) {
+    z-index: 43;
+    position: fixed;
+    width: 60vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 40px; }
+    .popup-video div:nth-child(1) h3 {
+      position: relative;
+      left: 0; }
+    .popup-video div:nth-child(1) button {
+      margin: 0 10px;
+      background: none;
+      border: none;
+      cursor: pointer; }
+      .popup-video div:nth-child(1) button svg {
+        height: 20px;
+        width: 20px;
+        fill: red; }
+        .popup-video div:nth-child(1) button svg:hover {
+          transform: scale(1.2); }
+    .popup-video div:nth-child(1) .fermer svg {
+      margin-bottom: 10px;
+      margin-left: 20px;
+      fill: blue; }
+
+/*# sourceMappingURL=libre.css.map */
